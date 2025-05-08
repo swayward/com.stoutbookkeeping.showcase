@@ -1,0 +1,78 @@
+
+		<div class="content mt-3">
+			<!-- PAGE CONTENT HERE -->
+				<h2>Contact Us</h2>
+				
+				<div class="contact_info mb-3">
+					<p>
+						Stout Bookkeeping<br>
+						PO Box 3058<br>
+						Suwanee, GA 30024<br>
+						<a href="mailto:info@stoutbookkeeping.com">info@stoutbookkeeping.com</a><br>
+						<span class="call">(770) 845-6093</span>
+					</p>
+				</div>
+				
+				<form class="contact_form needs-validation contact_form" action="contact2.php" method="POST">
+	
+					  <div class="input-group mb-3 mt-3">
+					 	<span class="input-group-text">Company:</span>
+						<input type="text" id='company' name="company" class="form-control">
+					 </div>
+	
+					<div class="input-group mb-3 mt-3">
+					 	<span class="input-group-text">Name:</span>
+					 	<select class="form-select w-5" name="honorName">
+					 		<option value=""></option>
+					 		<option value="Mr">Mr</option>
+					 		<option value="Mrs">Mrs</option>
+					 		<option value="Ms">Ms</option>
+					 		<option value="Dr">Dr</option>
+					 	</select>
+					 	<input type="text" name="firstName" class="form-control" placeholder="First Name" required>
+					 	<input type="text" name="lastName" class="form-control"placeholder="Last Name" required>
+					 </div>
+					 
+					  <div class="input-group mb-3 mt-3">
+					 	<span class="input-group-text">Phone Number:</span>
+						<input type="tel" name='phone' class="form-control" required>
+					 </div>
+					 
+					  <div class="input-group mb-3 mt-3">
+					 	<span class="input-group-text">Email Address:</span>
+						<input type="email" name='email' class="form-control" required>
+					 </div>
+					 
+					 <div class="input-group mb-3 mt-3">
+					 	<span class="input-group-text">Email Subject:</span>
+						<input type="text" name='subject' class="form-control">
+					 </div>
+	 
+					 <div class="input-group mb-3 mt-3">
+					 	<span class="input-group-text">Message:</span>
+						<textarea class="form-control" name="message" rows="3"></textarea>
+					 </div>
+					 
+					 <div>
+					 	  <label class="form-label">What is your preferred method of contacting you back?</label>
+						 <div class="form-check">
+							<input type="radio" class="form-check-input" id="radio1" name="contact" value="phone" checked>Phone Call
+							<label class="form-check-label" for="radio1"></label>
+						</div>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" id="radio2" name="contact" value="email">Email Reply
+							<label class="form-check-label" for="radio2"></label>
+						</div>
+					</div>
+					 
+					<div class="input-group mb-3 mt-3">
+					 	<span class="input-group-text">How did you hear about Stout Bookkeeping?</span>
+						<input type="text" name='hear' class="form-control">
+					</div>
+					
+					<div class="d-grid">
+					 	<button type="submit" class="btn btn-primary btn-block" name="send" value="sent">Send</button>
+					</div>
+				</form>
+				
+			</div>

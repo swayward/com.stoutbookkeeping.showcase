@@ -1,0 +1,124 @@
+<?php
+$services_active = '';
+$tips_active = '';
+$quickbooks_active = '';
+$contact_active = ''; 
+$index_active = '';
+$istitle = '';
+
+if ($page == 'services') { $istitle = 'Services'; $services_active = 'active'; }
+elseif ($page == 'tips') { $istitle = 'Business Tips'; $tips_active = 'active'; }
+elseif ($page == 'quickbooks') { $istitle = 'QuickBooks'; $quickbooks_active = 'active'; }
+elseif ($page == 'contact') { $istitle = 'Contact'; $contact_active = 'active'; }
+else { $istitle = 'Home'; }
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- Latest compiled and minified CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+					
+		<meta name="keywords" content="bookkeeping, accounting, atlanta, georgia, quickbooks, quickbooks certified, proadvisor, accounts payable, accounts receivable, taxes, reporting, business, " />
+		<meta name="description" content="StoutBookkeeping is a bookkeeping firm based in Atlanta Georgia." />
+		
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		
+		<style type="text/css">
+		
+body { background-color: white; margin: 15px; }
+
+.nav-item { margin: 1px; text-align: center; }
+	.nav-item img { margin: 5px 0 0 0; width: 48px; border-radius: 25px; transition: border-radius 1s; }
+		.active { border-style: solid; border-color: white; border-width: 2px; border-radius: 25px; }
+		.nav-item:hover img { border-style: solid; border-color: white; border-width: 2px; border-radius: 5px; }
+	.nav-item a { color: white; }
+	
+.navbar { background-color: #0096A9; }
+
+.nav-home { background-color: #86BF52; height: 112px; width: 112px; }
+	.nav-home:hover { background-color: #6FA341; color: white; }
+	
+.nav-services { background-color: #D53F26; height: 112px; width: 112px; }
+	.nav-services:hover { background-color: #C55745; color: white; }
+		
+.nav-tips { background-color: #673499; height: 112px; width: 112px; }
+	.nav-tips:hover { background-color: #724B98; color: white; }
+	
+.nav-helpful { background-color: #FFAA31; height: 112px; width: 112px; }
+	.nav-helpful:hover { background-color: #E9A647; color: white; }
+	
+.nav-contact { background-color: #2C9DAF; height: 112px; width: 112px; }
+	.nav-contact:hover { background-color: #56B0BF; color: white; }
+
+.carousel-text { position: absolute; top: 20px; background-color: black; color: white; padding-right: 10px; height: 75px; width: 300px; }
+
+.btn { text-align: center; }
+	.btn img { margin: 10px 0 0 0; width: 48px; border-radius: 25px; transition: border-radius 1s; }
+	.btn:hover img { border-style: solid; border-color: white; border-width: 2px; border-radius: 5px; }
+
+.btn-qb { background-color: #0096A9; color: white; }
+	.btn-qb:hover { background-color: #0096A9; color: white; }
+	
+.btn-ar { background-color: #E89E00; color: white; }
+	.btn-ar:hover { background-color: #E89E00; color: white; }
+
+.btn-recon { background-color: #7EA300; color: white; }
+	.btn-recon:hover { background-color: #7EA300; color: white; }
+
+.btn-mq { background-color: #0096A9; color: white; }
+	.btn-mq:hover { background-color: #0096A9; color: white; }
+
+.blurb { background-color: #243B4A; color: white; }
+
+.content { border: solid #0096A9 1px; padding: 15px; }
+
+.call { color: #008000; }
+
+.services-img { max-width: 50%; }
+
+.qb-img { float: right; width: 400px; margin-right: 10px; margin-left: 15px; }
+
+.clearfix::after { content: ""; clear: both; display: table; }
+
+.contact_form { margin: 0 30px 0 0; }
+
+		</style>
+		
+		<title><?php echo $istitle; ?> - Stout Bookkeeping</title>
+		
+		<!-- Added for showcase -->
+		<script src="showcase.js"></script>
+		
+	</head>
+	<body>
+		<div class="container p-5">
+	
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="index.php" title="When in Doubt, Call on Stout"><img src="images/admin/logo-stout-bookkeeping-2.png" alt="When in Doubt, Call on Stout"/></a>
+				</div>
+								
+				<div class="col-sm-6">
+					<ul class="nav float-end">
+						<li class="nav-item">
+							<a class="nav-link nav-home" href="index.php"><img class="<?php echo $index_active; ?>" alt="Home" src="images/icons/home_24dp_E8EAED.png">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-services" href="services.php"><img class="<?php echo $services_active; ?>" alt="Services" src="images/icons/view_list_24dp_E8EAED.png">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-tips" href="business-tips.php"><img class="<?php echo $tips_active; ?>" alt="Business Tips" src="images/icons/textsms_24dp_E8EAED.png">Business Tips</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-helpful" href="quickbooks.php"><img class="<?php echo $quickbooks_active; ?>" alt="QuickBooks" src="images/icons/qb.png">QuickBooks</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-contact" href="contact.php"><img class="<?php echo $contact_active; ?>" alt="Contact" src="images/icons/person_24dp_E8EAED.png">Contact</a>
+						</li>
+					 </ul>
+				</div>
+			</div>

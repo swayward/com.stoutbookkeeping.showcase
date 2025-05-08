@@ -1,0 +1,75 @@
+body { 	background-color: white; 	margin: 15px; }
+
+/* ******************************
+   Navication
+   ****************************** */
+.nav-item { margin: 1px; text-align: center; }
+	.nav-item img { margin: 5px 0 0 0; width: 48px; border-radius: 25px; transition: border-radius 1s; }
+		.active { border-style: solid; border-color: white; border-width: 2px; border-radius: 25px; }
+		.nav-item:hover img { border-style: solid; border-color: white; border-width: 2px; border-radius: 5px; }
+	.nav-item a { color: white; }
+	
+.navbar { background-color: #0096A9; }
+
+.nav-home { background-color: #86BF52; height: 112px; width: 112px; }
+	.nav-home:hover { background-color: #6FA341; color: white; }
+	
+.nav-services { background-color: #D53F26; height: 112px; width: 112px; }
+	.nav-services:hover { background-color: #C55745; color: white; }
+		
+.nav-tips { background-color: #673499; height: 112px; width: 112px; }
+	.nav-tips:hover { background-color: #724B98; color: white; }
+	
+.nav-helpful { background-color: #FFAA31; height: 112px; width: 112px; }
+	.nav-helpful:hover { background-color: #E9A647; color: white; }
+	
+.nav-contact { background-color: #2C9DAF; height: 112px; width: 112px; }
+	.nav-contact:hover { background-color: #56B0BF; color: white; }
+
+	
+/* ******************************
+   Row Two - Carousel
+   ****************************** */
+
+.carousel-text { position: absolute; top: 20px; background-color: black; color: white; padding-right: 10px; height: 75px; width: 300px; }
+
+/* ******************************
+   Row Three
+   ****************************** */
+.btn { text-align: center; }
+	.btn img { margin: 10px 0 0 0; width: 48px; border-radius: 25px; transition: border-radius 1s; }
+	.btn:hover img { border-style: solid; border-color: white; border-width: 2px; border-radius: 5px; }
+
+.btn-qb { background-color: #0096A9; color: white; }
+	.btn-qb:hover { background-color: #0096A9; color: white; }
+	
+.btn-ar { background-color: #E89E00; color: white; }
+	.btn-ar:hover { background-color: #E89E00; color: white; }
+
+.btn-recon { background-color: #7EA300; color: white; }
+	.btn-recon:hover { background-color: #7EA300; color: white; }
+
+.btn-mq { background-color: #0096A9; color: white; }
+	.btn-mq:hover { background-color: #0096A9; color: white; }
+
+/* ******************************
+   Row Four
+   ****************************** */
+.blurb { background-color: #243B4A; color: white; }
+
+
+
+/* ******************************
+   Other Pages
+   ****************************** */
+.content { border: solid #0096A9 1px; padding: 15px; }
+
+.call { color: #008000; }
+
+.services-img { max-width: 50%; }
+
+.qb-img { float: right; width: 400px; margin-right: 10px; margin-left: 15px; }
+
+.clearfix::after { content: ""; clear: both; display: table; }
+
+
